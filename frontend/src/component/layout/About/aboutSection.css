@@ -1,12 +1,46 @@
 .aboutSection {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   max-width: 100%;
   background-color: white;
-  display: grid;
-  grid-template-columns: 4fr 4fr;
-  position: fixed;
+  /* display: grid; */
+  /* grid-template-columns: 4fr 4fr; */
+  /* position: fixed; */
 }
+
+
+.MuiAvatar-img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.aboutCarousel{
+  /* background: red; */
+  height: 80vh;
+
+}
+
+.slider{
+  height: 100% !important;
+}
+.aboutCarouselDiv{
+  height: 100%;
+}
+
+.aboutCarouselImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutCard{
+  /* background :red; */
+}
+
+/* .aboutTitle{
+  margin: 50px;
+} */
 
 .aboutSectionGradient {
   background-image: linear-gradient(
@@ -17,24 +51,27 @@
 }
 
 .aboutSectionContainer {
-  position: absolute;
+  margin:50px;
+  /* position: absolute;
   left: 50%;
-  top: 50%;
+  top: 50%; */
   background-color: rgb(255, 255, 255);
-  width: 80vw;
-  height: 80vh;
-  transform: translateX(-50%) translateY(-50%);
-  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
-
+  /* width: 80vw;
+  height: 80vh; */
+  /* transform: translateX(-50%) translateY(-50%); */
+  /* box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192); */
+  box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 0.192);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .aboutSectionContainer > h1 {
+  margin: 30px 0 10px 0;
   font: 400 3vmax "Roboto";
   color: tomato;
-  margin: 2vmax;
+  /* margin: 2vmax; */
 }
 
 .aboutSectionContainer > div {
@@ -48,12 +85,14 @@
   flex-direction: column;
   align-items: center;
   padding: 2vmax;
+  padding-bottom: 7vmax;
   box-sizing: border-box;
 }
 
 .aboutSectionContainer > div > div > p {
   color: rgba(0, 0, 0, 0.623);
-  font: 100 1vmax "Roboto";
+  font: 500  "Roboto";
+  font-weight: bold;
 }
 
 .aboutSectionContainer > div > div > button {

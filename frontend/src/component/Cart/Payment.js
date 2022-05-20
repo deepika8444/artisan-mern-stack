@@ -19,6 +19,10 @@ import EventIcon from "@material-ui/icons/Event";
 import VpnKeyIcon from "@material-ui/icons/VpnKey";
 import { createOrder, clearErrors } from "../../actions/orderAction";
 
+
+const BackendUrl='http://localhost:5001'
+
+
 const Payment = ({ history }) => {
   const orderInfo = JSON.parse(sessionStorage.getItem("orderInfo"));
 
@@ -56,8 +60,14 @@ const Payment = ({ history }) => {
           "Content-Type": "application/json",
         },
       };
+      // const { data } = await axios.post(
+      //   "/api/v1/payment/process",
+      //   paymentData,
+      //   config
+      // );
+
       const { data } = await axios.post(
-        "/api/v1/payment/process",
+        BackendUrl+"/api/v1/payment/process",
         paymentData,
         config
       );
